@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/globals.css';
-import reportWebVitals from './reportWebVitals';
-import HomePage from './containers/Homepage';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/globals.css";
+import reportWebVitals from "./reportWebVitals";
+import HomePage from "./containers/Homepage";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import Documentation from "./containers/Documentation";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HomePage />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={HomePage} />
+        <Route path="/documentation" Component={Documentation} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
