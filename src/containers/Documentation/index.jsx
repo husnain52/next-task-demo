@@ -8,7 +8,7 @@ const Documentation = () => {
       <Header />
 
       {/* Main Content */}
-      <main className="container mx-auto my-8 px-4">
+      <main className=" my-8 px-4">
         {/* Introduction */}
         <section className="pt-16 mb-8">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>

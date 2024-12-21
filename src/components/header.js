@@ -29,7 +29,7 @@ export default function Header() {
           : "bg-transparent text-white"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between py-2 px-6">
+      <div className="flex items-center justify-between py-2 px-6">
         <a
           href="/"
           className="text-2xl font-extrabold text-blue-600 hover:text-blue-800 transition duration-300"

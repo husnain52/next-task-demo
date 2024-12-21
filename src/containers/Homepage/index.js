@@ -160,7 +160,7 @@ const HomeLandingPage = () => {
       <Header />
       {/* Hero Section */}
       <section className="h-screen bg-white overflow-hidden">
-        <div className="container mx-auto grid sm:grid-cols-1 xs:grid-cols-1 md:grid-cols-2  gap-4 h-full">
+        <div className=" grid sm:grid-cols-1 xs:grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-4 h-full">
           <div className="flex flex-col justify-center h-full pl-6">
             <h1 className="text-4xl md:text-6xl font-black mb-6">
               Project Management UI Kit Based on{" "}
@@ -203,7 +203,7 @@ const HomeLandingPage = () => {
               </div>
             </div>
           </div>
-          <div className="h-full bg-blue-900 clip-right-tilt hidden md:block">
+          <div className="h-full bg-blue-900 clip-right-tilt hidden lg:block">
             <div className="text-center">
               <img src="dashboard.png" alt="dashboard" />
               <img src="dashboard-dark.png" alt="dashboard" />
@@ -218,11 +218,11 @@ const HomeLandingPage = () => {
         <div className="grid md:grid-cols-2 gap-8 text-center">
           <div>
             <div className="bg-white shadow-2xl p-6 rounded-xl">
-              <div className="flex flex-col md:flex-row w-full">
+              <div className="flex flex-col lg:flex-row w-full">
                 <img
                   src="landing.png"
                   alt="landing"
-                  className="w-1/2 rounded-xl border mx-auto mb-6"
+                  className="w-full lg:w-1/2 rounded-xl border mx-auto mb-6"
                 />
                 <div className="ml-6">
                   <h2 className="text-2xl font-bold mb-2">Landing Page</h2>
@@ -246,11 +246,11 @@ const HomeLandingPage = () => {
           </div>
           <div>
             <div className="bg-white shadow-2xl p-6 rounded-xl">
-              <div className="flex flex-col md:flex-row w-full">
+              <div className="flex flex-col lg:flex-row w-full">
                 <img
                   src="dashboard.png"
                   alt="dashboard"
-                  className="w-1/2 rounded-xl border mx-auto mb-6"
+                  className="w-full lg:w-1/2 rounded-xl border mx-auto mb-6"
                 />
                 <div className="ml-6">
                   <h2 className="text-2xl font-bold mb-2">Dashboard</h2>
@@ -277,7 +277,7 @@ const HomeLandingPage = () => {
 
       {/* Features Section */}
       <section id="features" className="p-6 pb-24">
-        <div className="container mx-auto">
+        <div className="">
           <h2 className="text-3xl font-bold mb-24 text-center">Key Features</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {cards.map((card) => (
@@ -300,7 +300,7 @@ const HomeLandingPage = () => {
 
       {/* Pages Section */}
       <section id="pages" className="p-6 py-24">
-        <div className="container mx-auto text-center">
+        <div className=" text-center">
           <h2 className="text-3xl font-bold mb-10 text-black">Pages</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {pages.map((item) => (
@@ -317,7 +317,7 @@ const HomeLandingPage = () => {
 
       {/* Technologies Section */}
       <section id="technologies" className="p-6 py-24">
-        <div className="container mx-auto text-center">
+        <div className=" text-center">
           <h2 className="text-3xl font-bold mb-10">Technologies</h2>
           <div className="grid md:grid-cols-4 gap-8">
             {technologies.map((item) => (
