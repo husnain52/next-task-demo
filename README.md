@@ -1,71 +1,240 @@
-# Getting Started with Create React App
+# NexTask - Project Management Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive Next.js project management application demo featuring JWT authentication, API integration, and email templates. Built with React, Material-UI, and modern web technologies.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **JWT Authentication** - Secure user authentication and authorization
+- **API Integration** - RESTful API support for data management
+- **Email Templates** - Built-in email notification system
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Dark/Light Themes** - Toggle between elegant themes
+- **Interactive Charts** - Data visualization with ApexCharts
+- **Export Functionality** - PDF and CSV export capabilities
+- **Task Management** - Complete project and task tracking
+- **Team Collaboration** - User roles and permissions
+- **Real-time Notifications** - Stay updated with project changes
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 18, Next.js
+- **Styling**: Tailwind CSS, Material-UI
+- **Charts**: ApexCharts
+- **Icons**: Heroicons
+- **Authentication**: JWT
+- **Export**: react-csv, html2pdf
+- **Fonts**: Poppins
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/next-task-demo.git
+   cd next-task-demo
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### `npm run build`
+3. **Environment Setup**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local with your credentials
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Start development server**
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Available Scripts
 
-### `npm run eject`
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🏗️ Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/          # Reusable UI components
+│   ├── header.js       # Navigation header
+│   └── footer.js       # Footer component
+├── containers/         # Page containers
+│   ├── Homepage/       # Landing page
+│   └── Documentation/  # Documentation page
+├── styles/            # Global styles
+│   └── globals.css    # Tailwind CSS imports
+└── index.js          # App entry point
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔐 Authentication
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application includes JWT-based authentication with:
+- User registration and login
+- Protected routes
+- Token management
+- Session handling
 
-## Learn More
+## 📧 Email Templates
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Built-in email notification system supports:
+- Welcome emails
+- Password reset
+- Project notifications
+- Task assignments
+- Status updates
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Customization
 
-### Code Splitting
+### Theme Configuration
+Modify `tailwind.config.js` to customize:
+- Colors
+- Typography
+- Spacing
+- Breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Component Styling
+Update styles in `src/styles/globals.css` or component-specific CSS modules.
 
-### Analyzing the Bundle Size
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application is fully responsive with:
+- Mobile-first approach
+- Tablet optimization
+- Desktop layouts
+- Touch-friendly interfaces
 
-### Making a Progressive Web App
+## 📊 Charts & Analytics
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Integrated ApexCharts for:
+- Project progress tracking
+- Team performance metrics
+- Resource utilization
+- Timeline visualizations
 
-### Advanced Configuration
+## 📤 Export Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **PDF Export**: Generate professional reports
+- **CSV Export**: Download data for analysis
+- **Custom formats**: Extensible export system
 
-### Deployment
+## 🌐 Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Landing Page**: [https://next-task-seven-hazel.vercel.app](https://next-task-seven-hazel.vercel.app)
+- **Dashboard**: [https://next-task-seven-hazel.vercel.app/login](https://next-task-seven-hazel.vercel.app/login)
 
-### `npm run build` fails to minify
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# next-task-demo
+### Vercel (Recommended)
+```bash
+npm run build
+vercel --prod
+```
+
+### Netlify
+```bash
+npm run build
+# Deploy the build folder
+```
+
+### Docker
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "start"]
+```
+
+## 🔧 Environment Variables
+
+Create a `.env.local` file:
+```env
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database
+DATABASE_NAME=nextask_db
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+JWT_SECRET=your_super_secret_jwt_key
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+SENDER_EMAIL=noreply@yourapp.com
+```
+
+### 📋 Environment Setup Guide
+
+#### MongoDB Setup
+1. **Create MongoDB Atlas Account**: Visit [MongoDB Atlas](https://www.mongodb.com/atlas)
+2. **Create Cluster**: Set up a free cluster
+3. **Get Connection String**: 
+   - Click "Connect" → "Connect your application"
+   - Copy the connection string
+   - Replace `<password>` with your database password
+   - Set as `MONGODB_URI`
+4. **Database Name**: Choose any name for `DATABASE_NAME`
+
+#### Cloudinary Setup (Image Storage)
+1. **Create Account**: Visit [Cloudinary](https://cloudinary.com/)
+2. **Get Credentials**: From dashboard copy:
+   - Cloud Name → `CLOUDINARY_CLOUD_NAME`
+   - API Key → `CLOUDINARY_API_KEY`
+   - API Secret → `CLOUDINARY_API_SECRET`
+
+#### JWT Secret
+- **Generate Secret**: Use any random string (32+ characters)
+- **Example**: `openssl rand -base64 32` or online generator
+
+#### SMTP Email Setup
+1. **Gmail Setup**:
+   - Enable 2-factor authentication
+   - Generate App Password: Google Account → Security → App passwords
+   - Use App Password as `SMTP_PASS`
+2. **Other Providers**: Update `SMTP_HOST` and `SMTP_PORT` accordingly
+
+#### Base URL
+- **Development**: `http://localhost:3000`
+- **Production**: Your deployed domain
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+For support and questions:
+- Create an issue on GitHub
+- Contact: your-email@example.com
+- Documentation: [View Docs](./src/containers/Documentation/index.jsx)
+
+## 🙏 Acknowledgments
+
+- [Create React App](https://create-react-app.dev/)
+- [Material-UI](https://mui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [ApexCharts](https://apexcharts.com/)
+- [Heroicons](https://heroicons.com/)
